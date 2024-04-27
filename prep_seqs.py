@@ -45,7 +45,7 @@ def prep_seqs():
       
         negativeData = mod_seqs.add_labels(negativeData, positive=False)
 
-        # chopping longer list 
+        
         positiveData, negativeData = mod_seqs.equalize_lengths(positiveData, negativeData)
         print(f"Length of positive and negative data{len(positiveData), len(negativeData)}")
         
