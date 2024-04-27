@@ -10,6 +10,5 @@ TEST = "data/test.txt"
 TRAIN = "data/train.txt"
 VALID = "data/validation.txt"
 GNET = './Gnet'
-CALEXNET = './calexnet'
  NUCLEOS = ['A', 'T', 'C', 'G']
 ALEXNETSAVE= './Alexnetsave'
