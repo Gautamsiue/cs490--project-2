@@ -1,7 +1,6 @@
 def readFile(file):
         data = []
         with open(file, 'r') as f:
-            #refactoring data= f.readlines
             data = [line.strip() for line in f]
         return data
 
@@ -12,7 +11,6 @@ def write_file(file, data):
              f.write(d + '\n')
 
 
-# simple function to create files
 def create_file(path, ranges):
     with open(path, 'w') as f:
         if 'negatives.bed' in path:
