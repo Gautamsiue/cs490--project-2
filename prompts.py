@@ -8,7 +8,7 @@ def user_prompt(mean_of_means, mean_lst):
                         trim_val = mean_of_means
                         break
                 elif user_in == "2":
-                        trim_val = int(input("Enter the custom value > 200: ")) 
+                        trim_val = int(input("Enter the custom value > 300: ")) 
                         break
                 else:
                         "Invalid Selection, Try Again."
