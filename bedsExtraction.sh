@@ -12,7 +12,7 @@ fi
 mkdir $bf
 
 echo "Reading files...."
-
+mapfile -t links < "$file_path"
 
 echo "Downloading files....."
 for link in "${links[@]}"; do
