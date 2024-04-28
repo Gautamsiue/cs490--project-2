@@ -29,7 +29,7 @@ if cp -r $ref_origin .; then
 else
     echo "Unable to copy reference, need to download it..."
     mkdir reference && cd $_
-    wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz;
+    ##wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz;
     gunzip hg38.fa.gz;
     cd ..;
 fi
