@@ -1,3 +1,4 @@
+import os
 NEG_BEDS_DIR = "negs_beds"
 NEG_CLEAN_DIR = "negs_clean"
 POS_CLEAN_DIR = "pos_clean"
@@ -9,3 +10,4 @@ VALID = "data/validation.txt"
 GNET = './Gnet'
 NUCLEOS = ['A', 'T', 'C', 'G']
 ALEXNETSAVE= './Alexnetsave'
+PATH = os.getcwd()
