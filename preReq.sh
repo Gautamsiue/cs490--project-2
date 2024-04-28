@@ -41,9 +41,9 @@ mkdir $fastas $positives $bed_negatives $fastas_negatives $negatives
 
 if [ ! -d $bf ]; then
     echo "There is no bed files to read from, perhaps you forgot to run bedsExtraction.sh"
-   # rm -rf $file $fastas/$fastaFile $bed_negatives/$bed_negs_file $fastas_negatives/$fastas_negs_file $mean
-    #rm -rf $bf $fastas $bed_negatives $fastas_negatives reference
-    #rm -rf $positives $negatives
+    rm -rf $file $fastas/$fastaFile $bed_negatives/$bed_negs_file $fastas_negatives/$fastas_negs_file $mean
+    rm -rf $bf $fastas $bed_negatives $fastas_negatives reference
+    rm -rf $positives $negatives
    
 fi
 
