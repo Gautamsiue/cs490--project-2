@@ -6,7 +6,7 @@ bed_negatives="negs_beds"
 fastas_negatives="negs_fastas"
 negatives="negs_clean"
 ref_origin="/proj/siue-cs590-490-PG0/reference_genome/"
-rf="reference_genome"
+rf="reference"
 mean="mean.txt"
 
 
@@ -49,7 +49,7 @@ fi
 
 for file in $bf/*; do
    
-    filename=$(basename "$file")
+    filename= "$file"
     echo "Working on ${filename%.*}"
     fastaFile="${filename%.*}.fa"
     touch $fastas/$fastaFile
