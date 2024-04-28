@@ -10,7 +10,7 @@ def main():
     neg_file_name = f"{fasta}_negatives.bed"
     neg_file_name_two = f"{fasta}_clean_negatives.txt"
     pos_file_name = f"{fasta}_clean_positives.txt"
-    seq_data = FileUtils.read_file(fasta_file)
+    seq_data = FileUtils.readFile(fasta_file)
 
     if arg2 == 'pos':
 
@@ -35,7 +35,7 @@ def main():
         FileUtils.write_file(mean_file, [str(mean_seq_length)])
     if arg2 == constants.MEAN:
         print("Trimming the negative sequences to the same length as the positive sequences.\n")
-        mean = int(FileUtils.read_file(f"{fasta}_{constants.MEAN}")[0])
+        mean = int(FileUtils.readFile(f"{fasta}_{constants.MEAN}")[0])
         os.remove(f"{fasta}_{constants.MEAN}")
         seqs, neg_mean_seq_length = mod_seqs.clean_seq_data(seq_data)
         trimmed_seqs = mod_seqs.trim_sequences(seqs, mean)
