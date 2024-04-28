@@ -7,5 +7,5 @@ TEST = "data/test.txt"
 TRAIN = "data/train.txt"
 VALID = "data/validation.txt"
 GNET = './Gnet'
- NUCLEOS = ['A', 'T', 'C', 'G']
+NUCLEOS = ['A', 'T', 'C', 'G']
 ALEXNETSAVE= './Alexnetsave'
